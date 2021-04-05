@@ -55,6 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Case.cs" />
+    <Compile Include="CaseVote.cs" />
+    <Compile Include="CourtMembers.cs" />
+    <Compile Include="ExecutiveBranch.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\202104051426213_InitialCreate.cs" />
     <Compile Include="Migrations\202104051426213_InitialCreate.Designer.cs">

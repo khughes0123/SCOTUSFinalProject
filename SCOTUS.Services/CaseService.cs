@@ -81,5 +81,36 @@ namespace SCOTUS.Services
                     };
             }
         }
+
+        public bool UpdateCase(CaseEdit model, int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Cases
+                        .Single(e => e.CaseId == id && e.UserId == _userId);
+
+                entity.Summary = model.Summary;
+                entity.ModifiedUTC = DateTimeOffset.UtcNow;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteCase(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Cases
+                        .Single(e => e.CaseId == id && e.UserId == _userId);
+
+                ctx.Cases.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }
