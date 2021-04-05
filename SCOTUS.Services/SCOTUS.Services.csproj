@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCOTUS.Data\SCOTUS.Data.csproj">
+      <Project>{de185f5f-2a80-4f24-97dd-ffe579622f66}</Project>
+      <Name>SCOTUS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCOTUS.Models\SCOTUS.Models.csproj">
+      <Project>{01b3ce99-c3cb-443e-98c8-fe7eb7ce93e1}</Project>
+      <Name>SCOTUS.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

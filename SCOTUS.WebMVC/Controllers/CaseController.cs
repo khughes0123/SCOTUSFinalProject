@@ -1,4 +1,6 @@
-﻿using SCOTUS.Models;
+﻿using Microsoft.AspNet.Identity;
+using SCOTUS.Models;
+using SCOTUS.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +15,9 @@ namespace SCOTUS.WebMVC.Controllers
         // GET: Case
         public ActionResult Index()
         {
-            var model = new CaseListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new CaseService(userId);
+            var model = service.GetCases();
             return View(model);
         }
 
@@ -27,10 +31,17 @@ namespace SCOTUS.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(CaseCreate model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-
+                return View(model);
             }
-            return View(model);
+
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new CaseService(userId);
+
+            service.CreateCase(model);
+
+            return RedirectToAction("Index");
         }
+    }
 }

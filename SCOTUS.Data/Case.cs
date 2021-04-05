@@ -12,7 +12,7 @@ namespace SCOTUS.Data
         [Key]
         public int CaseId { get; set; }
         [Required]
-        public Guid OwnerId { get; set; }
+        public Guid UserId { get; set; }
         [Required]
         [Display(Name = "Court Case")]
         public string Title { get; set; }
