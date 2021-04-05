@@ -13,6 +13,13 @@ namespace SCOTUS.WebMVC.Controllers
     public class CaseController : Controller
     {
         // GET: Case
+        private CaseService CreateCaseService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new CaseService(userId);
+            return service;
+        }
+
         public ActionResult Index()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
@@ -31,17 +38,35 @@ namespace SCOTUS.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(CaseCreate model)
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid) return View(model);
+
+            var service = CreateCaseService();
+
+            if (service.CreateCase(model))
+
             {
-                return View(model);
+                TempData["SaveResult"] = "Case has been added to our database.";
+                return RedirectToAction("Index");
+
             }
 
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new CaseService(userId);
+            ModelState.AddModelError("", "Case could not be added, please confirm all necessary information has been entered.");
 
-            service.CreateCase(model);
-
-            return RedirectToAction("Index");
+            return View(model);
         }
+
+        public ActionResult Details(int id)
+        {
+            var svc = CreateCaseService();
+            var model = svc.GetCaseById(id);
+
+            return View(model);
+        }
+
+
+
     }
+
+
 }
+    

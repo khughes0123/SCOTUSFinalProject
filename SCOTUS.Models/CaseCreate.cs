@@ -14,7 +14,7 @@ namespace SCOTUS.Models
         [MaxLength(2000)]
         public string Summary { get; set; }
         [Required]
-        [Display(Name= "Case Year")]
+        [Display(Name= "Date Of SCOTUS Decision")]
         public DateTime CaseYear { get; set; }
     }
 }

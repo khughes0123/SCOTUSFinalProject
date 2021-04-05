@@ -60,5 +60,26 @@ namespace SCOTUS.Services
                 return query.ToArray();
             }
         }
+
+        public CaseDetail GetCaseById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Cases
+                        .Single(e => e.CaseId == id && e.UserId == _userId);
+                return
+                    new CaseDetail
+                    {
+                        CaseId = entity.CaseId,
+                        Title = entity.Title,
+                        Summary = entity.Summary,
+                        CaseYear = entity.CaseYear,
+                        CreatedUTC = entity.CreatedUTC,
+                        ModifiedUTC = entity.ModifiedUTC
+                    };
+            }
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace SCOTUS.Data
         [Required]
         public string Summary { get; set; }
         [Required]
+        [Display(Name = "Date of SCOTUS Decision")]
         public DateTime CaseYear { get; set; }
         public string HouseControl { get; set; }
         public string SenateControl { get; set; }
