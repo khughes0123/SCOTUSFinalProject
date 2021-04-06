@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CaseController.cs" />
+    <Compile Include="Controllers\CourtMembersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -242,6 +243,10 @@
     <Content Include="Views\Case\Delete.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
+    <Content Include="Views\CourtMembers\Index.cshtml" />
+    <Content Include="Views\CourtMembers\Create.cshtml" />
+    <Content Include="Views\CourtMembers\Details.cshtml" />
+    <Content Include="Views\CourtMembers\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -10,17 +10,16 @@ namespace SCOTUS.Models
     public class CourtMembersEdit
     {
         public int CourtId { get; set; }
-
-        [Required]
+        
         [Display(Name = "Chief Justice")]
         public string JusticeOneChiefJustice { get; set; }
-        [Required]
+        
         public string JusticeTwo { get; set; }
-        [Required]
+        
         public string JusticeThree { get; set; }
-        [Required]
+        
         public string JusticeFour { get; set; }
-        [Required]
+        
         public string JusticeFive { get; set; }
         public string JusticeSix { get; set; }
         public string JusticeSeven { get; set; }

@@ -54,15 +54,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CaseCreate.cs" />
-    <Compile Include="CaseEdit.cs" />
-    <Compile Include="CaseListItem.cs" />
-    <Compile Include="CaseDetail.cs" />
-    <Compile Include="CaseVoteCreate.cs" />
-    <Compile Include="CaseVoteDetail.cs" />
-    <Compile Include="CourtMembersCreate.cs" />
-    <Compile Include="CourtMembersDetail.cs" />
-    <Compile Include="CourtMembersEdit.cs" />
+    <Compile Include="CaseModels\CaseCreate.cs" />
+    <Compile Include="CaseModels\CaseEdit.cs" />
+    <Compile Include="CaseModels\CaseListItem.cs" />
+    <Compile Include="CaseModels\CaseDetail.cs" />
+    <Compile Include="CaseVoteModels\CaseVoteCreate.cs" />
+    <Compile Include="CaseVoteModels\CaseVoteDetail.cs" />
+    <Compile Include="CourtMembersModels\CourtMembersCreate.cs" />
+    <Compile Include="CourtMembersModels\CourtMembersDetail.cs" />
+    <Compile Include="CourtMembersModels\CourtMembersEdit.cs" />
+    <Compile Include="CourtMembersModels\CourtMembersListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

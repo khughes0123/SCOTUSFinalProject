@@ -23,5 +23,8 @@ namespace SCOTUS.Data
         [ForeignKey(nameof(Case))]
         public int CaseId { get; set; }
         public virtual Case Case { get; set; }
+
+        [Required]
+        public Guid UserId { get; set; }
     }
 }

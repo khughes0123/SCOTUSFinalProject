@@ -1,0 +1,101 @@
+﻿@model IEnumerable<SCOTUS.Models.CourtMembersModels.CourtMembersListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@if (TempData.ContainsKey("SaveResult"))
+<div class="alert alert-success fade in" role="alert">
+    @ViewBag.SaveResult
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    @TempData["SaveResult"]
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CourtId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeOneChiefJustice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeTwo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeThree)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeFour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeFive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeSix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeSeven)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeEight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeNine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JusticeTen)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourtId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeOneChiefJustice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeTwo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeThree)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeFour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeFive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeSix)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeSeven)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeEight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeNine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JusticeTen)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.CourtId}) |
+                @Html.ActionLink("Details", "Details", new {id=item.CourtId}) |
+            </td>
+        </tr>
+    }
+
+</table>
