@@ -70,5 +70,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExecutiveBranchModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCOTUS.Data\SCOTUS.Data.csproj">
+      <Project>{de185f5f-2a80-4f24-97dd-ffe579622f66}</Project>
+      <Name>SCOTUS.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

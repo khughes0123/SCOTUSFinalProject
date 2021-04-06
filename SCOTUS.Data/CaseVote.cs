@@ -17,12 +17,12 @@ namespace SCOTUS.Data
         [Required]
         [ForeignKey(nameof(Court))]
         public int CourtId { get; set; }
-        public  CourtMembers Court { get; set; }
+        public CourtMembers Court { get; set; }
 
         [Required]
         [ForeignKey(nameof(Case))]
         public int CaseId { get; set; }
-        public virtual Case Case { get; set; }
+        public Case Case { get; set; }
 
         [Required]
         public Guid UserId { get; set; }
