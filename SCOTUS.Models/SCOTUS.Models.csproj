@@ -58,6 +58,8 @@
     <Compile Include="CaseEdit.cs" />
     <Compile Include="CaseListItem.cs" />
     <Compile Include="CaseDetail.cs" />
+    <Compile Include="CaseVoteCreate.cs" />
+    <Compile Include="CaseVoteDetail.cs" />
     <Compile Include="CourtMembersCreate.cs" />
     <Compile Include="CourtMembersDetail.cs" />
     <Compile Include="CourtMembersEdit.cs" />

@@ -33,6 +33,9 @@ namespace SCOTUS.Data
         }
 
         public DbSet<Case> Cases { get; set; }
+        public DbSet<CourtMembers> CourtMembers { get; set; }
+        public DbSet<ExecutiveBranch> ExecutiveBranches { get; set; }
+        public DbSet<CaseVote> CaseVotes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

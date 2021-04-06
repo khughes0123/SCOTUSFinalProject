@@ -15,9 +15,9 @@ namespace SCOTUS.Data
         public string CourtDecision { get; set; }
 
         [Required]
-        [ForeignKey(nameof(CourtMembers))]
+        [ForeignKey(nameof(Court))]
         public int CourtId { get; set; }
-        public virtual CourtMembers Court { get; set; }
+        public  CourtMembers Court { get; set; }
 
         [Required]
         [ForeignKey(nameof(Case))]
