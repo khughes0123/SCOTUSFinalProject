@@ -53,6 +53,7 @@ namespace SCOTUS.Services
                                     CaseId = e.CaseId,
                                     Title = e.Title,
                                     Summary = e.Summary,
+                                    CaseYear = e.CaseYear,
                                     CreatedUTC = e.CreatedUTC
                                 }
                         );

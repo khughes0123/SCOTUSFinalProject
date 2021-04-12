@@ -7,13 +7,13 @@ namespace SCOTUS.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class dates : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(dates));
         
         string IMigrationMetadata.Id
         {
-            get { return "202104051426213_InitialCreate"; }
+            get { return "202104121803597_dates"; }
         }
         
         string IMigrationMetadata.Source

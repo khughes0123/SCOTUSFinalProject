@@ -13,8 +13,8 @@ namespace SCOTUS.Models
         public string Title { get; set; }
         [MaxLength(2000)]
         public string Summary { get; set; }
-        [Required]
+       // [Required]
         [Display(Name= "Date Of SCOTUS Decision")]
-        public DateTime CaseYear { get; set; }
+        public DateTimeOffset? CaseYear { get; set; }
     }
 }

@@ -60,6 +60,7 @@
     <Compile Include="CaseModels\CaseDetail.cs" />
     <Compile Include="CaseVoteModels\CaseVoteCreate.cs" />
     <Compile Include="CaseVoteModels\CaseVoteDetail.cs" />
+    <Compile Include="CaseVoteModels\CaseVoteListItem.cs" />
     <Compile Include="CourtMembersModels\CourtMembersCreate.cs" />
     <Compile Include="CourtMembersModels\CourtMembersDetail.cs" />
     <Compile Include="CourtMembersModels\CourtMembersEdit.cs" />
@@ -70,9 +71,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ExecutiveBranchModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SCOTUS.Data\SCOTUS.Data.csproj">
       <Project>{de185f5f-2a80-4f24-97dd-ffe579622f66}</Project>

@@ -1,5 +1,6 @@
 ﻿using SCOTUS.Data;
 using SCOTUS.Models;
+using SCOTUS.Models.CaseVoteModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,7 @@ namespace SCOTUS.Services
             }
         }
 
-        public IEnumerable<CaseVoteDetail> GetCaseVotes()
+        public IEnumerable<CaseVoteListItem> GetCaseVotes()
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -45,9 +46,22 @@ namespace SCOTUS.Services
                         .Where(e => e.UserId == _userId)
                         .Select(
                             e =>
-                                new CaseVoteDetail
+                                new CaseVoteListItem
                                 {
-                                    CaseVoteId = e.CaseVoteId
+                                    CaseVoteId = e.CaseVoteId,
+                                    CourtId = e.CourtId,
+                                    CaseId = e.CaseId,
+                                    CourtDecision =e.CourtDecision,
+                                    JusticeOneChiefJustice = e.Court.JusticeOneChiefJustice,
+                                    JusticeTwo = e.Court.JusticeTwo,
+                                    JusticeThree = e.Court.JusticeThree,
+                                    JusticeFour = e.Court.JusticeFour,
+                                    JusticeFive = e.Court.JusticeFive,
+                                    JusticeSix = e.Court.JusticeSix,
+                                    JusticeSeven = e.Court.JusticeSeven,
+                                    JusticeEight = e.Court.JusticeEight,
+                                    JusticeNine = e.Court.JusticeNine,
+                                    JusticeTen = e.Court.JusticeTen
                                 }
                         );
 
@@ -55,7 +69,7 @@ namespace SCOTUS.Services
             }
         }
 
-        public CaseVoteDetail GetCaseVoteById(int id)
+   /*     public CaseVoteDetail GetCaseVoteById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -68,7 +82,7 @@ namespace SCOTUS.Services
                     {
                         CaseVoteId = entity.CaseVoteId,
 
-                    };
+                    };*/
             }
         }
     }

@@ -17,7 +17,7 @@ namespace SCOTUS.Models
         public string Summary { get; set; }
         
         [Display(Name = "Date of SCOTUS Decision")]
-        public DateTime CaseYear { get; set; }
+        public DateTimeOffset? CaseYear { get; set; }
 
         [Display(Name = "Date Added To Database")]
         public DateTimeOffset CreatedUTC { get; set; }

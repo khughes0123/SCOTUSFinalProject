@@ -1,5 +1,6 @@
 ﻿using SCOTUS.Data;
 using SCOTUS.Models;
+using SCOTUS.Models.CourtMembersModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,7 +45,7 @@ namespace SCOTUS.Services
             }
         }
 
-        public IEnumerable<CourtMembers> GetCourts()
+        public IEnumerable<CourtMembersListItem> GetCourts()
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -54,7 +55,7 @@ namespace SCOTUS.Services
                         .Where(e => e.UserId == _userId)
                         .Select(
                             e =>
-                                new CourtMembers
+                                new CourtMembersListItem
                                 {
                                     CourtId = e.CourtId,
                                     JusticeOneChiefJustice = e.JusticeOneChiefJustice,

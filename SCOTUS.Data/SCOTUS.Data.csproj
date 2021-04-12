@@ -57,15 +57,14 @@
     <Compile Include="Case.cs" />
     <Compile Include="CaseVote.cs" />
     <Compile Include="CourtMembers.cs" />
-    <Compile Include="ExecutiveBranch.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202104051426213_InitialCreate.cs" />
-    <Compile Include="Migrations\202104051426213_InitialCreate.Designer.cs">
-      <DependentUpon>202104051426213_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202104121755597_execremove.cs" />
+    <Compile Include="Migrations\202104121755597_execremove.Designer.cs">
+      <DependentUpon>202104121755597_execremove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104051524323_Initial.cs" />
-    <Compile Include="Migrations\202104051524323_Initial.Designer.cs">
-      <DependentUpon>202104051524323_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202104121803597_dates.cs" />
+    <Compile Include="Migrations\202104121803597_dates.Designer.cs">
+      <DependentUpon>202104121803597_dates.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,11 +74,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104051426213_InitialCreate.resx">
-      <DependentUpon>202104051426213_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104121755597_execremove.resx">
+      <DependentUpon>202104121755597_execremove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104051524323_Initial.resx">
-      <DependentUpon>202104051524323_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104121803597_dates.resx">
+      <DependentUpon>202104121803597_dates.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

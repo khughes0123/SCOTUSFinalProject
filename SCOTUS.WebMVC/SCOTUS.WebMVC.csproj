@@ -245,13 +245,14 @@
     <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
     <Content Include="Views\CourtMembers\Index.cshtml" />
-    <Content Include="Views\CourtMembers\Create.cshtml" />
     <Content Include="Views\CourtMembers\Details.cshtml" />
     <Content Include="Views\CourtMembers\Edit.cshtml" />
+    <Content Include="Views\CaseVote\Index.cshtml" />
+    <Content Include="Views\CourtMembers\Create.cshtml" />
+    <Content Include="Views\CaseVote\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\CaseVote\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

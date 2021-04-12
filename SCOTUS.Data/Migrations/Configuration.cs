@@ -10,7 +10,6 @@ namespace SCOTUS.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "SCOTUS.Data.ApplicationDbContext";
         }
 
         protected override void Seed(SCOTUS.Data.ApplicationDbContext context)
