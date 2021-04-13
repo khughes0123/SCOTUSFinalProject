@@ -24,7 +24,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("The Cases", "Index", "Case")</li>
                     <li>@Html.ActionLink("The Votes", "Index", "CaseVote")</li>
-                    <li>@Html.ActionLink("The Members", "Index", "CourtMembers")</li>
+                    <li>@Html.ActionLink("The Courts", "Index", "CourtMembers")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -43,3 +43,8 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+<style>
+    .navbar {
+        background-image: linear-gradient(blue,gray);
+    }
+</style>
