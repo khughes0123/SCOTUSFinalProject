@@ -11,7 +11,22 @@ namespace SCOTUS.Models
     {
         public int CaseVoteId { get; set; }
 
-        public CourtMembersDetail Court
+        public string CourtDecision { get; set; }
+
+        public string JusticeOneChiefJustice { get; set; }
+        public string JusticeTwo { get; set; }
+        public string JusticeThree { get; set; }
+        public string JusticeFour { get; set; }
+        public string JusticeFive { get; set; }
+        public string JusticeSix { get; set; }
+        public string JusticeSeven { get; set; }
+        public string JusticeEight { get; set; }
+        public string JusticeNine { get; set; }
+        public string JusticeTen { get; set; }
+        public int CourtId { get; set; }
+        public int CaseId { get; set; }
+
+        public virtual CourtMembersDetail Court
         {
             get
             {
@@ -37,7 +52,7 @@ namespace SCOTUS.Models
             }
         }
 
-        public CaseDetail Case
+        public virtual CaseDetail Case
         {
             get
             {

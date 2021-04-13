@@ -51,7 +51,7 @@ namespace SCOTUS.Services
                                     CaseVoteId = e.CaseVoteId,
                                     CourtId = e.CourtId,
                                     CaseId = e.CaseId,
-                                    CourtDecision =e.CourtDecision,
+                                    CourtDecision = e.CourtDecision,
                                     JusticeOneChiefJustice = e.Court.JusticeOneChiefJustice,
                                     JusticeTwo = e.Court.JusticeTwo,
                                     JusticeThree = e.Court.JusticeThree,
@@ -69,7 +69,7 @@ namespace SCOTUS.Services
             }
         }
 
-   /*     public CaseVoteDetail GetCaseVoteById(int id)
+        public CaseVoteDetail GetCaseVoteById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -81,8 +81,36 @@ namespace SCOTUS.Services
                     new CaseVoteDetail
                     {
                         CaseVoteId = entity.CaseVoteId,
+                        CourtDecision = entity.CourtDecision,
+                        CaseId = entity.CaseId,
+                        CourtId = entity.CourtId,
+                        JusticeOneChiefJustice = entity.Court.JusticeOneChiefJustice,
+                        JusticeTwo = entity.Court.JusticeTwo,
+                        JusticeThree = entity.Court.JusticeThree,
+                        JusticeFour = entity.Court.JusticeFour,
+                        JusticeFive = entity.Court.JusticeFive,
+                        JusticeSix = entity.Court.JusticeSix,
+                        JusticeSeven = entity.Court.JusticeSeven,
+                        JusticeEight = entity.Court.JusticeEight,
+                        JusticeNine = entity.Court.JusticeNine,
+                        JusticeTen = entity.Court.JusticeTen
 
-                    };*/
+                    };
+            }
+        }
+
+        public bool UpdateCaseVote(CaseVoteEdit model, int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .CaseVotes
+                        .Single(e => e.CaseVoteId == id && e.UserId == _userId);
+
+                entity.CourtDecision = model.CourtDecision;
+
+                return ctx.SaveChanges() == 1;
             }
         }
     }

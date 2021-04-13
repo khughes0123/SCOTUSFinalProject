@@ -60,6 +60,7 @@
     <Compile Include="CaseModels\CaseDetail.cs" />
     <Compile Include="CaseVoteModels\CaseVoteCreate.cs" />
     <Compile Include="CaseVoteModels\CaseVoteDetail.cs" />
+    <Compile Include="CaseVoteModels\CaseVoteEdit.cs" />
     <Compile Include="CaseVoteModels\CaseVoteListItem.cs" />
     <Compile Include="CourtMembersModels\CourtMembersCreate.cs" />
     <Compile Include="CourtMembersModels\CourtMembersDetail.cs" />

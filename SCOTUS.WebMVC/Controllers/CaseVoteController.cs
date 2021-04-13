@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
 using SCOTUS.Models;
+using SCOTUS.Models.CaseVoteModels;
 using SCOTUS.Services;
 using System;
 using System.Collections.Generic;
@@ -63,5 +64,45 @@ namespace SCOTUS.WebMVC.Controllers
 
             return View(model);
         }
+
+        public ActionResult Edit(int id)
+        {
+            var service = CreateCaseVoteService();
+            var detail = service.GetCaseVoteById(id);
+            var model =
+                new CaseVoteEdit
+                {
+                    CourtDecision = detail.CourtDecision,
+                };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, CaseVoteEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.CaseVoteId != id)
+            {
+                ModelState.AddModelError("", "Not a valid CaseVote Id.");
+                return View(model);
+            }
+
+            var service = CreateCaseVoteService();
+
+            if (service.UpdateCaseVote(model, id))
+
+            {
+                TempData["SaveResult"] = "Case vote has been changed in our database.";
+                return RedirectToAction("Index");
+
+            }
+
+            ModelState.AddModelError("", "Case vote could not be changed");
+
+            return View(model);
+        }
+
     }
 }

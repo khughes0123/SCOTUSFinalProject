@@ -250,6 +250,8 @@
     <Content Include="Views\CaseVote\Index.cshtml" />
     <Content Include="Views\CourtMembers\Create.cshtml" />
     <Content Include="Views\CaseVote\Create.cshtml" />
+    <Content Include="Views\CaseVote\Edit.cshtml" />
+    <Content Include="Views\CaseVote\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
