@@ -1,7 +1,7 @@
 # SCOTUSFinalProject
 
 ## *About*
-### This was my final project to complete Red Badge. This is a .NET Framework MVC 5 Web Application using n-tier architecture.  The application allows you to POST, GET, PUT, AND DELETE any of the 4 data tables previously listed. This database can be cloned and filled out locally using Postman or any other collaboration platform for API development. Here are some screenshots of a complete local database.
+### This was my final project to complete Red Badge. This is a .NET Framework MVC 5 Web Application using n-tier architecture.  The application will allow one to access Supreme Court Cases, Votes, and Court Members from a database.  The premise is to give users access to data (such as political control, case details, court members who voted) revolving around any of the Supreme Court Cases made throughout history.  The hope is this information will eventuall grow and be compiled in a concise format that give users an idea of the history of the United States, why perhaps the decision was made, and what decisions will be made in the future.  Below are examples of the actual application.
 ![Seasons and Episodes](https://github.com/ashleylawrence836/GroupApiProject/blob/develop/Assets/GetSeasons.PNG "Seasons and Episodes")
 ![Characters](https://github.com/ashleylawrence836/GroupApiProject/blob/develop/Assets/GetCharacters.PNG "Characters")
 
@@ -20,5 +20,5 @@
 * ### [Walking Dead Episode List](https://en.wikipedia.org/wiki/List_of_The_Walking_Dead_episodes)
 
 
-## :busts_in_silhouette: *Contributors:*
-* ### Ashley Lawrence
+## :busts_in_silhouette: *Created By:*
+* ### Kyle Hughes
