@@ -1,9 +1,10 @@
 # SCOTUSFinalProject
 
 ## *About*
-### This was my final project to complete Red Badge. This is a .NET Framework MVC 5 Web Application using n-tier architecture.  The application will allow one to access Supreme Court Cases, Votes, and Court Members from a database.  The premise is to give users access to data (such as political control, case details, court members who voted) revolving around any of the Supreme Court Cases made throughout history.  The hope is this information will eventuall grow and be compiled in a concise format that give users an idea of the history of the United States, why perhaps the decision was made, and what decisions will be made in the future.  Below are examples of the actual application.
-![Seasons and Episodes](https://github.com/ashleylawrence836/GroupApiProject/blob/develop/Assets/GetSeasons.PNG "Seasons and Episodes")
-![Characters](https://github.com/ashleylawrence836/GroupApiProject/blob/develop/Assets/GetCharacters.PNG "Characters")
+### This was my final project to complete Red Badge. This is a .NET Framework MVC 5 Web Application using n-tier architecture.  The application will allow one to access Supreme Court Cases, Votes, and Court Members from a database.  The premise is to give users access to data (such as political control, case details, court members who voted) revolving around any of the Supreme Court Cases made throughout history.  The hope is this information will eventuall grow and be compiled in a concise format that give users an idea of the history of the United States, why perhaps the decision was made, and what decisions will be made in the future.
+
+## *Product*
+* ### Link to website: [SCOTUS.MVC](https://scotuswebmvc.azurewebsites.net/)
 
 ## *Programs Used*
 * ### Built With: [VisualStudio](https://visualstudio.microsoft.com/)
