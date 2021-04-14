@@ -10,9 +10,9 @@
 * ### Deployed With: [Azure](https://www.azure.com/)
 
 ## :heavy_check_mark: *Planning Documents:*
-* ### [Sprint Planning](https://docs.google.com/document/d/1qjVKNp-G_WFZdccrCCxRuFqfpE8hpjJxKPPn5RLOA_c/edit)
-* ### [Trello Agile Planning](https://trello.com/b/8Oj9sSLx/presentationwalkingdeadproject)
-* ### [DbDiagram](https://dbdiagram.io/d/6041306cfcdcb6230b22a3e2)
+* ### [Sprint Planning](https://1drv.ms/w/s!Ai7dNhszMSiNghb_x1ukbIeTSa9h?e=YK0gfc)
+* ### [Trello Agile Planning]()
+* ### [DbDiagram](https://dbdiagram.io/d/60414163fcdcb6230b22a72e)
 
 
 ## :open_book: *Resources:*
