@@ -17,7 +17,8 @@
 
 ## :open_book: *Resources:*
 * ### [Github Markdown](https://guides.github.com/features/mastering-markdown)
-* ### [Supreme Court Resources](https://caselaw.findlaw.com/court/us-supreme-court)
+* ### [Find Law](https://caselaw.findlaw.com/court/us-supreme-court)
+* ### [Supreme Court Gov](https://www.supremecourt.gov/opinions/opinions.aspx)
 
 
 ## :busts_in_silhouette: *Created By:*
