@@ -11,13 +11,13 @@
 
 ## :heavy_check_mark: *Planning Documents:*
 * ### [Sprint Planning](https://1drv.ms/w/s!Ai7dNhszMSiNghb_x1ukbIeTSa9h?e=YK0gfc)
-* ### [Trello Agile Planning]()
+* ### [Trello Agile Planning](https://trello.com/b/fLb5NYy1/scotus-redbadgeproject)
 * ### [DbDiagram](https://dbdiagram.io/d/60414163fcdcb6230b22a72e)
 
 
 ## :open_book: *Resources:*
 * ### [Github Markdown](https://guides.github.com/features/mastering-markdown)
-* ### [Walking Dead Episode List](https://en.wikipedia.org/wiki/List_of_The_Walking_Dead_episodes)
+* ### [Supreme Court Resources](https://caselaw.findlaw.com/court/us-supreme-court)
 
 
 ## :busts_in_silhouette: *Created By:*
