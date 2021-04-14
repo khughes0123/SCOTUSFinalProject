@@ -16,5 +16,8 @@ namespace SCOTUS.Models
        // [Required]
         [Display(Name= "Date Of SCOTUS Decision")]
         public DateTimeOffset? CaseYear { get; set; }
+        public string HouseControl { get; set; }
+        public string SenateControl { get; set; }
+
     }
 }

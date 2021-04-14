@@ -16,5 +16,9 @@ namespace SCOTUS.Models
         public DateTimeOffset? CaseYear { get; set; }
         [Display(Name = "Date Added")]
         public DateTimeOffset CreatedUTC { get; set; }
+        public string HouseControl { get; set; }
+        public string SenateControl { get; set; }
+
+
     }
 }

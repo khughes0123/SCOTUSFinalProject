@@ -4,21 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Cases</h2>
+<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-@if (TempData.ContainsKey("SaveResult"))
-{
-    <div class="alert alert-success fade in" role="alert">
-        @ViewBag.SaveResult
-        <button type="button" class="close" data-dismiss="alert">
-            <span>&times;</span>
-        </button>
-        @TempData["SaveResult"]
-    </div>
-}
 <table class="table">
     <tr>
         <th>
@@ -36,33 +26,44 @@
         <th>
             @Html.DisplayNameFor(model => model.CreatedUTC)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HouseControl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SenateControl)
+        </th>
         <th></th>
     </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CaseId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Summary)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CaseYear)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedUTC)
-            </td>
-            <td>
-                @Html.ActionLink("Modify Case", "Edit", new { id = item.CaseId}) |
-                @Html.ActionLink("Case Details", "Details", new {  id = item.CaseId}) |
-                @Html.ActionLink("Delete Case", "Delete", new {  id = item.CaseId})
-            </td>
-        </tr>
-    }
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CaseId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Summary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CaseYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedUTC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HouseControl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SenateControl)
+        </td>
+        <td>
+           
+            @Html.ActionLink("Details", "Details", new { id=item.CaseId})
+            
+        </td>
+    </tr>
+}
 
 </table>

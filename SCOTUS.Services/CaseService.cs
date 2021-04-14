@@ -54,7 +54,9 @@ namespace SCOTUS.Services
                                     Title = e.Title,
                                     Summary = e.Summary,
                                     CaseYear = e.CaseYear,
-                                    CreatedUTC = e.CreatedUTC
+                                    CreatedUTC = e.CreatedUTC,
+                                    HouseControl= e.HouseControl,
+                                    SenateControl=e.SenateControl
                                 }
                         );
 

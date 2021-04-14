@@ -53,6 +53,7 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Modify Case", "Edit", new { id = Model.CaseId}) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CaseId }) |
+    @Html.ActionLink("Delete", "Delete", new { id= Model.CaseId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
