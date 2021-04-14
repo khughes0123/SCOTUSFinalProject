@@ -25,6 +25,8 @@ namespace SCOTUS.Services
                 UserId = _userId,
                 Title = model.Title,
                 Summary = model.Summary,
+                HouseControl = model.HouseControl,
+                SenateControl = model.SenateControl,
                 CaseYear = model.CaseYear,
                 CreatedUTC = DateTimeOffset.Now
 
@@ -78,6 +80,8 @@ namespace SCOTUS.Services
                         CaseId = entity.CaseId,
                         Title = entity.Title,
                         Summary = entity.Summary,
+                        HouseControl = entity.HouseControl,
+                        SenateControl = entity.SenateControl,
                         CaseYear = entity.CaseYear,
                         CreatedUTC = entity.CreatedUTC,
                         ModifiedUTC = entity.ModifiedUTC

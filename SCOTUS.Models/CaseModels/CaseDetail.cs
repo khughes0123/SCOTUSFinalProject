@@ -13,7 +13,8 @@ namespace SCOTUS.Models
 
         [Display(Name = "Court Case")]
         public string Title { get; set; }
-        
+        public string HouseControl { get; set; }
+        public string SenateControl { get; set; }
         public string Summary { get; set; }
         
         [Display(Name = "Date of SCOTUS Decision")]

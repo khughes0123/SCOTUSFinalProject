@@ -11,11 +11,35 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.CaseId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CaseId)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Title)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HouseControl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HouseControl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SenateControl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SenateControl)
         </dd>
 
         <dt>
@@ -53,7 +77,7 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CaseId }) |
-    @Html.ActionLink("Delete", "Delete", new { id= Model.CaseId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CaseId}) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.CaseId}) |
     @Html.ActionLink("Back to List", "Index")
 </p>
