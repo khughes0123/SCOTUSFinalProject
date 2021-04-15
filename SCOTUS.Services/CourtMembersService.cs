@@ -127,6 +127,21 @@ namespace SCOTUS.Services
             }
         }
 
+        public bool DeleteCourt(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .CourtMembers
+                        .Single(e => e.CourtId == id && e.UserId == _userId);
+
+                ctx.CourtMembers.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
     }
 }
 

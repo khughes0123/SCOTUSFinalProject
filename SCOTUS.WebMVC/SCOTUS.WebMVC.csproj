@@ -239,7 +239,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Case\Edit.cshtml" />
     <Content Include="Views\Case\Delete.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
@@ -250,10 +249,13 @@
     <Content Include="Views\CourtMembers\Create.cshtml" />
     <Content Include="Views\CaseVote\Create.cshtml" />
     <Content Include="Views\CaseVote\Edit.cshtml" />
-    <Content Include="Views\CaseVote\Details.cshtml" />
     <Content Include="Views\Case\Create.cshtml" />
     <Content Include="Views\Case\Index.cshtml" />
     <Content Include="Views\Case\Details.cshtml" />
+    <Content Include="Views\CaseVote\Details.cshtml" />
+    <Content Include="Views\Case\Edit.cshtml" />
+    <Content Include="Views\CaseVote\Delete.cshtml" />
+    <Content Include="Views\CourtMembers\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

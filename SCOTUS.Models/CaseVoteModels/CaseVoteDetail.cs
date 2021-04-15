@@ -12,6 +12,7 @@ namespace SCOTUS.Models
         public int CaseVoteId { get; set; }
 
         public string CourtDecision { get; set; }
+        public string Summary { get; set; }
 
         public string JusticeOneChiefJustice { get; set; }
         public string JusticeTwo { get; set; }

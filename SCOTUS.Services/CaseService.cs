@@ -99,6 +99,9 @@ namespace SCOTUS.Services
                         .Single(e => e.CaseId == id && e.UserId == _userId);
 
                 entity.Summary = model.Summary;
+                entity.Title = model.Title;
+                entity.CaseYear = model.CaseYear;
+                entity.HouseControl = model.SenateControl;
                 entity.ModifiedUTC = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;

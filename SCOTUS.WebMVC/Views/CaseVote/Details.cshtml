@@ -27,6 +27,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.Summary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Summary)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.JusticeOneChiefJustice)
         </dt>
 
@@ -126,5 +134,6 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CaseVoteId }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.CaseVoteId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

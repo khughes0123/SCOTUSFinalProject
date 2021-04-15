@@ -83,6 +83,7 @@ namespace SCOTUS.Services
                         CaseVoteId = entity.CaseVoteId,
                         CourtDecision = entity.CourtDecision,
                         CaseId = entity.CaseId,
+                        Summary = entity.Case.Summary,
                         CourtId = entity.CourtId,
                         JusticeOneChiefJustice = entity.Court.JusticeOneChiefJustice,
                         JusticeTwo = entity.Court.JusticeTwo,
@@ -109,6 +110,22 @@ namespace SCOTUS.Services
                         .Single(e => e.CaseVoteId == id && e.UserId == _userId);
 
                 entity.CourtDecision = model.CourtDecision;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+
+        public bool DeleteCaseVote(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .CaseVotes
+                        .Single(e => e.CaseVoteId == id && e.UserId == _userId);
+
+                ctx.CaseVotes.Remove(entity);
 
                 return ctx.SaveChanges() == 1;
             }

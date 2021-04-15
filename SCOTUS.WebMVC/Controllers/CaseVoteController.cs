@@ -104,5 +104,28 @@ namespace SCOTUS.WebMVC.Controllers
             return View(model);
         }
 
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateCaseVoteService();
+            var model = svc.GetCaseVoteById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateCaseVoteService();
+
+            service.DeleteCaseVote(id);
+
+            TempData["SaveResult"] = "Case vote was successfully deleted";
+
+            return RedirectToAction("Index");
+        }
+
     }
 }
